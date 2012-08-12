@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Based on P51d sound config -->
+<PropertyList>
+
+  <fx>
+ 
+    <crank>
+      <name>engstart</name>
+      <path>Sounds/engstart.wav</path>
+      <property>/engines/engine/cranking</property>
+      <volume>
+        <offset>-0.4</offset>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </crank>
+
+    <crank>
+      <name>crank</name>
+      <mode>looped</mode>
+      <path>Aircraft/Curtiss-P40/Sounds/starter.wav</path>
+      <condition>
+        <property>/engines/engine/cranking</property>
+        <not>
+          <property>/engines/engine/running</property>
+        </not>
+      </condition>
+      <volume>
+        <offset>-0.5</offset>
+      </volume>
+      <pitch>
+        <property>/engines/engine/cranking</property>
+        <factor>1.0</factor>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </crank>
+
+    <crank>
+      <name>cough</name>
+      <path>Aircraft/Curtiss-P40/Sounds/startup.wav</path>
+      <property>/engines/engine/running</property>
+      <volume>
+        <offset>-0.50</offset>
+      </volume>
+      <pitch>
+        <property>/engines/engine/running</property>
+        <factor>1.0</factor>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </crank>
+  
+    <engine>
+      <name>engine</name>
+      <mode>looped</mode>
+      <path>Aircraft/Curtiss-P40/Sounds/rpm.wav</path>
+      <condition>
+        <property>/engines/engine/running</property>
+        <less-than>
+          <property>/engines/engine/rpm</property>
+          <value>5000</value>
+        </less-than>
+      </condition>
+      <volume>
+        <property>/sim/current-view/internal</property>
+        <offset>1.0</offset>
+        <factor>-0.6</factor>
+      </volume>
+      <volume>
+        <property>/engines/engine/mp-inhg</property>
+        <offset>0.0</offset>
+        <factor>0.025</factor>  
+        <min>1.0</min>
+        <max>3.0</max>
+      </volume>
+      <volume>
+        <property>/engines/engine/rpm</property>
+        <factor>0.00033</factor>
+        <min>0.2</min>
+        <max>1.0</max>
+        <offset>0.0</offset>
+      </volume>
+      <pitch>
+        <property>/engines/engine/rpm</property>
+        <factor>0.00033</factor>
+        <min>0.0</min>
+        <max>1.0</max>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </engine>
+
+    <engine>
+      <name>enginerun</name>
+      <mode>looped</mode>
+      <path>Sounds/wasp.wav</path>
+      <condition>
+        <property>/engines/engine/running</property>
+        <greater-than>
+          <property>/engines/engine/rpm</property>
+          <value>400</value>
+        </greater-than>
+      </condition>
+      <volume>
+        <property>/sim/current-view/internal</property>
+        <offset>1.0</offset>
+        <factor>-0.6</factor>
+      </volume>
+      <volume>
+        <property>/engines/engine/mp-inhg</property>
+        <offset>0.0</offset>
+        <factor>0.025</factor>  
+        <min>1.0</min>
+        <max>3.0</max>
+      </volume>
+      <volume>
+        <property>/engines/engine/rpm</property>
+        <factor>0.00033</factor>
+        <min>0.0</min>
+        <max>1.00</max>
+        <offset>0.0</offset>
+      </volume>
+      <pitch>
+        <property>/engines/engine/rpm</property>
+        <factor>0.00033</factor>
+        <min>0.0</min>
+        <max>1.0</max>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </engine>
+
+    <rumble>
+      <name>rumble</name>
+      <mode>looped</mode>
+      <path>Sounds/rumble.wav</path>
+      <condition>
+        <or>
+          <property>/gear/gear[0]/wow</property>
+          <property>/gear/gear[1]/wow</property>
+          <property>/gear/gear[2]/wow</property>
+        </or>
+      </condition>
+      <volume>
+        <property>/velocities/airspeed-kt</property>
+        <type>log</type>
+        <factor>0.25</factor>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </rumble>
+
+    <gear>
+      <name>gear</name>
+      <mode>in-transit</mode>
+      <path>Sounds/gear.wav</path>
+      <property>/gear/gear[0]/position-norm</property>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </gear>
+
+    <gear>
+      <name>gear-lock</name>
+      <path>Sounds/gear-lck.wav</path>
+      <condition>
+        <greater-than>
+          <property>/gear/gear[0]/position-norm</property>
+          <value>0.9</value>
+        </greater-than>
+      </condition>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </gear>
+
+    <squeal>
+      <name>squeal</name>
+      <path>Sounds/squeal.wav</path>
+      <condition>
+        <or>
+          <property>/gear/gear[0]/wow</property>
+          <property>/gear/gear[1]/wow</property>
+          <property>/gear/gear[2]/wow</property>
+        </or>
+      </condition>
+      <volume>
+        <property>/velocities/speed-down-fps</property>
+        <factor>0.5</factor>
+        <max>1.0</max>
+      </volume>
+      <volume>
+        <property>/velocities/airspeed-kt</property>
+        <factor>0.01</factor>
+        <max>1.0</max>
+      </volume>
+      <volume>
+        <internal>dt_stop</internal>
+        <factor>0.05</factor>
+        <max>1.0</max>
+      </volume>
+      <pitch>
+        <property>/velocities/airspeed-kt</property>
+        <factor>0.0025</factor>
+        <offset>0.5</offset>
+        <max>1.0</max>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </squeal>
+ 
+    <flap>
+      <name>flaps</name>
+      <mode>in-transit</mode>
+      <path>Sounds/flaps.wav</path>
+      <property>/surface-positions/flap-pos-norm</property>
+      <volume>
+        <factor>0.15</factor>
+      </volume>
+    </flap>
+  
+    <wind>
+      <name>wind</name>
+      <mode>looped</mode>
+      <path>Sounds/wind.wav</path>
+      <property>/velocities/airspeed-kt</property>
+      <volume>
+        <property>/velocities/airspeed-kt</property>
+        <factor>0.002</factor>
+        <min>0.00</min>
+        <max>0.25</max>
+      </volume>
+      <pitch>
+        <property>/velocities/airspeed-kt</property>
+        <factor>0.01</factor>
+        <offset>0.5</offset>
+        <max>1.0</max>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </wind>
+  
+    <wind-gear>
+      <name>wind</name>
+      <mode>looped</mode>
+      <path>Sounds/wind.wav</path>
+      <property>/gear/gear[0]/position-norm</property>
+      <volume>
+        <property>/velocities/airspeed-kt</property>
+        <factor>0.002</factor>
+        <min>0.00</min>
+        <max>0.25</max>
+      </volume>
+      <pitch>
+        <property>/velocities/airspeed-kt</property>
+        <factor>0.01</factor>
+        <offset>0.5</offset>
+        <max>1.0</max>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </wind-gear>
+  
+    <guns>
+      <name>gunfire</name>
+      <mode>looped</mode>
+      <path>Aircraft/Curtiss-P40/Sounds/gunfire.wav</path>
+      <condition>
+        <and>
+          <property>controls/armament/trigger</property>
+          <property>ai/submodels/submodel[0]/count</property>
+        </and>
+      </condition>
+      <volume>
+        <factor>1.2</factor>
+        <max>1.0</max>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </guns>
+
+    <!-- Toggle Switches -->
+    <click>
+      <name>guns and gun sight on</name>
+      <path>Sounds/click.wav</path>
+      <property>
+        <property>/controls/armament/guns-enabled</property>
+      </property>
+      <volume>
+        <factor>1.0</factor>
+      </volume>
+    </click>
+
+    <click>
+      <name>gun sight off</name>
+      <path>Sounds/click.wav</path>
+      <condition>
+        <not>
+          <property>/controls/armament/gunsight/power-on</property>
+        </not>
+      </condition>
+      <volume>
+        <factor>1.0</factor>
+      </volume>
+    </click>
+
+    <click>
+      <name>guns and gun sight on</name>
+      <path>Sounds/click.wav</path>
+      <property>
+        <property>/controls/armament/gunsight/power-on</property>
+      </property>
+      <volume>
+        <factor>1.0</factor>
+      </volume>
+    </click> 
+
+    <click>
+      <name>gun sight and camera on</name>
+      <path>Sounds/click.wav</path>
+      <condition>
+        <less-than>
+          <property>/controls/armament/gunsight/power-on</property>
+          <value>0</value>
+        </less-than>
+      </condition>
+      <condition>
+        <not>
+          <property>/controls/armament/guns-enabled</property>
+        </not>
+      </condition>
+      <volume>
+        <factor>1.0</factor>
+      </volume>
+    </click>
+
+      <click>
+        <name>Battery on</name>
+        <path>Sounds/click.wav</path>
+        <property>
+          <property>controls/electric/battery-switch</property>
+        </property>
+        <volume>
+          <factor>1.0</factor>
+        </volume>
+      </click>
+      <click>
+        <name>Battery off</name>
+        <path>Sounds/click.wav</path>
+         <condition>
+          <not>
+            <property>controls/electric/battery-switch</property>
+          </not>
+        </condition>
+        <volume>
+          <factor>1.0</factor>
+        </volume>
+      </click>
+
+     <click>
+        <name>Delay off</name>
+        <path>Sounds/click.wav</path>
+        <property>
+          <property>/controls/armament/instant</property>
+        </property>
+        <volume>
+          <factor>1.0</factor>
+        </volume>
+      </click>
+      <click>
+        <name>Delay on</name>
+        <path>Sounds/click.wav</path>
+         <condition>
+          <not>
+            <property>/controls/armament/instant</property>
+          </not>
+        </condition>
+        <volume>
+          <factor>1.0</factor>
+        </volume>
+      </click>
+
+      <click>
+        <name>right chem arm</name>
+        <path>Sounds/click.wav</path>
+        <condition>
+           <less-than>
+             <property>/controls/armament/right-bomb-arm-chem-release</property>
+             <value>0</value>
+           </less-than>
+        </condition>
+        <volume>
+          <factor>1.0</factor>
+        </volume>
+      </click>
+
+      <click>
+        <name>right bomb arm</name>
+        <path>Sounds/click.wav</path>
+        <condition>
+           <more-than>
+             <property>/controls/armament/right-bomb-arm-chem-release</property>
+             <value>0</value>
+           </more-than>
+        </condition>
+        <volume>
+          <factor>1.0</factor>
+        </volume>
+      </click>
+
+      <click>
+        <name>right bomb arm off</name>
+        <path>Sounds/click.wav</path>
+        <condition>
+          <not>
+             <property>/controls/armament/right-bomb-arm-chem-release</property>
+          </not>
+        </condition>
+        <volume>
+          <factor>1.0</factor>
+        </volume>
+      </click>
+
+      <click>
+        <name>left bomb arm</name>
+        <path>Sounds/click.wav</path>
+        <condition>
+           <less-than>
+             <property>/controls/armament/left-bomb-arm-chem-release</property>
+             <value>0</value>
+           </less-than>
+        </condition>
+        <volume>
+          <factor>1.0</factor>
+        </volume>
+      </click>
+
+      <click>
+        <name>left bomb chem arm</name>
+        <path>Sounds/click.wav</path>
+        <condition>
+           <greater-than>
+             <property>/controls/armament/left-bomb-arm-chem-release</property>
+             <value>0</value>
+           </greater-than>
+        </condition>
+        <volume>
+          <factor>1.0</factor>
+        </volume>
+      </click>
+
+      <click>
+        <name>left bomb arm off</name>
+        <path>Sounds/click.wav</path>
+        <condition>
+          <not>
+             <property>/controls/armament/left-bomb-arm-chem-release</property>
+          </not>
+        </condition>
+        <volume>
+          <factor>1.0</factor>
+        </volume>
+      </click>
+
+      <click>
+        <name>weapons select bombs</name>
+        <path>Sounds/click.wav</path>
+        <condition>
+           <greater-than>
+             <property>/controls/armament/weapons-select</property>
+             <value>0</value>
+           </greater-than>
+        </condition>
+        <condition>
+           <less-than>
+             <property>/controls/armament/weapons-select</property>
+             <value>3</value>
+           </less-than>
+        </condition>
+        <volume>
+          <factor>1.0</factor>
+        </volume>
+      </click>
+
+      <click>
+        <name>weapons select rockets</name>
+        <path>Sounds/click.wav</path>
+        <condition>
+           <greater-than>
+             <property>/controls/armament/weapons-select</property>
+             <value>2</value>
+           </greater-than>
+        </condition>
+        <volume>
+          <factor>1.0</factor>
+        </volume>
+      </click>
+
+      <click>
+        <name>weapons select guns</name>
+        <path>Sounds/click.wav</path>
+        <condition>
+          <not>
+             <property>/controls/armament/weapons-select</property>
+          </not>
+        </condition>
+        <volume>
+          <factor>1.0</factor>
+        </volume>
+      </click>
+
+      <click>
+        <name>mag off</name>
+        <path>Sounds/click.wav</path>
+        <condition>
+           <not>
+             <property>/controls/engines/engine/magnetos</property>
+           </not>
+        </condition>
+        <volume>
+          <factor>1.0</factor>
+        </volume>
+      </click>
+
+      <click>
+        <name>mag 1</name>
+        <path>Sounds/click.wav</path>
+        <condition>
+           <equeals>
+             <property>/controls/engines/engine/magnetos</property>
+             <value>1</value>
+           </equeals>
+        </condition>
+        <volume>
+          <factor>1.0</factor>
+        </volume>
+      </click>
+
+      <click>
+        <name>mag 2</name>
+        <path>Sounds/click.wav</path>
+        <condition>
+           <equeals>
+             <property>/controls/engines/engine/magnetos</property>
+             <value>2</value>
+           </equeals>
+        </condition>
+        <volume>
+          <factor>1.0</factor>
+        </volume>
+      </click>
+
+      <click>
+        <name>mag 3</name>
+        <path>Sounds/click.wav</path>
+        <condition>
+           <equeals>
+             <property>/controls/engines/engine/magnetos</property>
+             <value>3</value>
+           </equeals>
+        </condition>
+        <volume>
+          <factor>1.0</factor>
+        </volume>
+      </click>
+
+      <click>
+        <name>tank 0</name>
+        <path>Sounds/click.wav</path>
+        <condition>
+           <not>
+             <property>/controls/fuel/tank-selector</property>
+           </not>
+        </condition>
+        <volume>
+          <factor>1.0</factor>
+        </volume>
+      </click>
+
+    <click>
+      <name>tank 1</name>
+      <path>Sounds/click.wav</path>
+      <condition>
+        <property>/controls/fuel/tank-selector</property>
+      </condition>
+      <volume>
+        <factor>1.0</factor>
+      </volume>
+    </click>
+
+    <click>
+      <name>tank 2</name>
+      <path>Sounds/click.wav</path>
+      <condition>
+        <equeals>
+          <property>/controls/fuel/tank-selector</property>
+          <value>2</value>
+        </equeals>
+      </condition>
+      <volume>
+        <factor>1.0</factor>
+      </volume>
+    </click>
+
+    <click>
+      <name>tank 3</name>
+      <path>Sounds/click.wav</path>
+      <condition>
+        <equeals>
+          <property>/controls/fuel/tank-selector</property>
+          <value>3</value>
+        </equeals>
+      </condition>
+      <volume>
+        <factor>1.0</factor>
+      </volume>
+    </click>
+
+    <click>
+      <name>tank 4</name>
+      <path>Sounds/click.wav</path>
+      <condition>
+        <equeals>
+          <property>/controls/fuel/tank-selector</property>
+          <value>4</value>
+        </equeals>
+      </condition>
+      <volume>
+        <factor>1.0</factor>
+      </volume>
+    </click>
+
+    <click>
+      <name>fuel on</name>
+      <path>Sounds/click.wav</path>
+      <property>
+        <property>/controls/fuel/on</property>
+      </property>
+      <volume>
+        <factor>1.0</factor>
+      </volume>
+    </click>
+
+    <click>
+      <name>fuel off</name>
+      <path>Sounds/click.wav</path>
+      <condition>
+        <not>
+          <property>/controls/fuel/on</property>
+        </not>
+      </condition>
+      <volume>
+        <factor>1.0</factor>
+      </volume>
+    </click>
+
+  </fx>
+ 
+</PropertyList>
+

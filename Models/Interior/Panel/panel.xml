@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- AI -->
+  <model>
+    <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> -0.00370 </x-m>
+      <y-m>  0.11900 </y-m>
+      <z-m>  0.08000 </z-m>
+    </offsets>
+  </model>
+
+  <!-- COMPASS -->
+  <model>
+    <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m>  0.00000 </x-m>
+      <y-m> -0.11400 </y-m>
+      <z-m>  0.09300 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> -0.00300 </x-m>
+      <y-m> -0.04700 </y-m>
+      <z-m> -0.03600 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.007285 </x-m>
+      <y-m>  0.046000 </y-m>
+      <z-m> -0.036000 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> -0.007285 </x-m>
+      <y-m> -0.141000 </y-m>
+      <z-m> -0.036000 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.00600 </x-m>
+      <y-m> -0.14100 </y-m>
+      <z-m> -0.12800 </z-m>
+    </offsets>
+  </model>
+
+  <!-- RADIO COMPASS -->
+  <model>
+    <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/radio-compass/radio-compass.xml</path>
+    <offsets>
+      <x-m> -0.007285 </x-m>
+      <y-m> -0.308000 </y-m>
+      <z-m> -0.109000 </z-m>
+    </offsets>
+  </model>
+
+  <!-- MANIFOLD -->
+  <model>
+    <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/engine/man-gauge.xml</path>
+    <offsets>
+      <x-m> -0.00100 </x-m>
+      <y-m> -0.22000 </y-m>
+      <z-m> -0.03700 </z-m>
+    </offsets>
+  </model>
+
+  <!-- RPM -->
+  <model>
+    <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/engine/rpm-gauge.xml</path>
+    <offsets>
+      <x-m> -0.00100 </x-m>
+      <y-m>  0.21600 </y-m>
+      <z-m> -0.03700 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
