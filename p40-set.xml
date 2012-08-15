@@ -6,7 +6,7 @@
   <sim>
 
     <description>Curtiss P 40 (YASim)</description>
-    <author>Emmanuel BARANGER (3D/FDM)</author>
+    <author>Emmanuel BARANGER (3D/FDM), Tomcatter (Instruments)</author>
 
     <rating>
       <FDM type="int">     1 </FDM>

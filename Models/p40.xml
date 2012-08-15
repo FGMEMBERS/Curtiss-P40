@@ -874,9 +874,9 @@
       <z-m> -1.47404 </z-m>
     </center>
     <axis>
-      <x>  0 </x>
-      <y> -1 </y>
-      <z>  0 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -891,9 +891,9 @@
       <z-m> -1.47404 </z-m>
     </center>
     <axis>
-      <x>  0 </x>
-      <y> -1 </y>
-      <z>  0 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -901,16 +901,16 @@
     <type>spin</type>
     <object-name>roueA</object-name>
     <property>gear/gear[2]/rollspeed-ms</property>
-    <factor> 30 </factor>
+    <factor> -30 </factor>
     <center>
       <x-m>  3.41693 </x-m>
       <y-m>  0.00000 </y-m>
       <z-m> -0.43299 </z-m>
     </center>
     <axis>
-      <x>  0 </x>
-      <y> -1 </y>
-      <z>  0 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 

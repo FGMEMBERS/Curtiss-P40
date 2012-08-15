@@ -15,9 +15,9 @@
   <model>
     <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
-      <x-m> -0.00370 </x-m>
-      <y-m>  0.11900 </y-m>
-      <z-m>  0.08000 </z-m>
+      <x-m> -0.0037 </x-m>
+      <y-m>  0.1190 </y-m>
+      <z-m>  0.0800 </z-m>
     </offsets>
   </model>
 
@@ -25,9 +25,9 @@
   <model>
     <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/compass/compass.xml</path>
     <offsets>
-      <x-m>  0.00000 </x-m>
-      <y-m> -0.11400 </y-m>
-      <z-m>  0.09300 </z-m>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.114 </y-m>
+      <z-m>  0.093 </z-m>
     </offsets>
   </model>
 
@@ -35,9 +35,9 @@
   <model>
     <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/turn/turn.xml</path>
     <offsets>
-      <x-m> -0.00300 </x-m>
-      <y-m> -0.04700 </y-m>
-      <z-m> -0.03600 </z-m>
+      <x-m> -0.003 </x-m>
+      <y-m> -0.047 </y-m>
+      <z-m> -0.036 </z-m>
     </offsets>
   </model>
 
@@ -65,40 +65,68 @@
   <model>
     <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
-      <x-m> -0.00600 </x-m>
-      <y-m> -0.14100 </y-m>
-      <z-m> -0.12800 </z-m>
-    </offsets>
-  </model>
-
-  <!-- RADIO COMPASS -->
-  <model>
-    <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/radio-compass/radio-compass.xml</path>
-    <offsets>
-      <x-m> -0.007285 </x-m>
-      <y-m> -0.308000 </y-m>
-      <z-m> -0.109000 </z-m>
+      <x-m> -0.006 </x-m>
+      <y-m> -0.141 </y-m>
+      <z-m> -0.128 </z-m>
     </offsets>
   </model>
 
   <!-- MANIFOLD -->
   <model>
-    <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/engine/man-gauge.xml</path>
+    <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/manifold/manifold.xml</path>
     <offsets>
-      <x-m> -0.00100 </x-m>
-      <y-m> -0.22000 </y-m>
-      <z-m> -0.03700 </z-m>
+      <x-m> -0.005 </x-m>
+      <y-m> -0.231 </y-m>
+      <z-m> -0.036 </z-m>
     </offsets>
   </model>
 
   <!-- RPM -->
   <model>
-    <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/engine/rpm-gauge.xml</path>
+    <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
     <offsets>
-      <x-m> -0.00100 </x-m>
-      <y-m>  0.21600 </y-m>
-      <z-m> -0.03700 </z-m>
+      <x-m> -0.005 </x-m>
+      <y-m>  0.216 </y-m>
+      <z-m> -0.035 </z-m>
     </offsets>
   </model>
 
+  <!-- MAGNETOS -->
+  <model>
+    <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/switchs/magnetos.xml</path>
+    <offsets>
+      <x-m>  0.054 </x-m>
+      <y-m> -0.180 </y-m>
+      <z-m> -0.324 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -21 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <!-- Switchs -->
+    <!--<path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/switchs/all-switch.xml</path>-->
+    <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/switchs/battery.xml</path>
+    <offsets>
+      <x-m>  0.0220 </x-m>
+      <y-m> -0.2858 </y-m>
+      <z-m> -0.2352 </z-m>
+      <roll-deg>    0.0 </roll-deg>
+      <pitch-deg> -21.5 </pitch-deg>
+      <heading-deg> 0.0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- flapsgear -->
+    <model>
+      <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/flapsgear/flapsgear.xml</path>
+      <offsets>
+        <x-m> -0.005 </x-m>
+        <y-m> -0.308 </y-m>
+        <z-m> -0.109 </z-m>
+      </offsets>
+  </model>
+
 </PropertyList>
+

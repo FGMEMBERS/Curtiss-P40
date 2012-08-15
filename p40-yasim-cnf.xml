@@ -5,6 +5,7 @@
   <sim>
 
     <description>Curtiss P 40 (YASim)</description>
+    <author>Emmanuel BARANGER (3D/FDM), Tomcatter (Instruments)</author>
     <flight-model>yasim</flight-model>
     <aero>p40-yasim</aero>
 
