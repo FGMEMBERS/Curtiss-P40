@@ -104,28 +104,29 @@
     </offsets>
   </model>
 
+  <!-- FLAPSGEAR -->
   <model>
-    <!-- Switchs -->
-    <!--<path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/switchs/all-switch.xml</path>-->
-    <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/switchs/battery.xml</path>
+    <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/flapsgear/flapsgear.xml</path>
     <offsets>
-      <x-m>  0.0220 </x-m>
-      <y-m> -0.2858 </y-m>
-      <z-m> -0.2352 </z-m>
-      <roll-deg>    0.0 </roll-deg>
-      <pitch-deg> -21.5 </pitch-deg>
-      <heading-deg> 0.0 </heading-deg>
+      <x-m> -0.005 </x-m>
+      <y-m> -0.308 </y-m>
+      <z-m> -0.109 </z-m>
     </offsets>
   </model>
 
-  <!-- flapsgear -->
-    <model>
-      <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/flapsgear/flapsgear.xml</path>
-      <offsets>
-        <x-m> -0.005 </x-m>
-        <y-m> -0.308 </y-m>
-        <z-m> -0.109 </z-m>
-      </offsets>
+  <!-- CLOCK -->
+  <model>
+    <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m> -0.003348 </x-m>
+      <y-m> -0.233000 </y-m>
+      <z-m> -0.140000 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ALL SWITCHS -->
+  <model>
+    <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/switchs/all-switchs.xml</path>
   </model>
 
 </PropertyList>

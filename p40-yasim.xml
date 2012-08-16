@@ -15,7 +15,7 @@
 
 <airplane mass="6350" >
 
-  <approach speed="80" aoa="4" >
+  <approach speed="95" aoa="4" >
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
     <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
     <solve-weight idx="0" weight="180"/>
@@ -96,18 +96,18 @@
   <propeller x="3.203" y="0.0" z="0.248"
              radius="1.6925"
              mass="1395"
-             moment="15"
+             moment="25"
              cruise-speed="235"
              cruise-alt="5000"
              cruise-power="1100"
-             cruise-rpm="2800"
+             cruise-rpm="2600"
              takeoff-power="1395"
              takeoff-rpm="3000">
+             <actionpt x="4.203" y="0.0" z="0.248"/>
              <piston-engine eng-rpm="3000"
                             eng-power="1395"
                             displacement="1710"
                             compression="6.65"/>
-             <actionpt x="4.203" y="0.0" z="0.248"/>
              <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle"/>
              <control-input control="STARTER" axis="/controls/engines/engine[0]/starter"/>
              <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos"/>
@@ -164,9 +164,9 @@
   </gear>
 
   <!-- Fuel  -->  
-  <tank x="1.02" y=" 3" z="-0.04" capacity="210" />
-  <tank x="0.00" y=" 0" z=" 0.00" capacity="156" />
-  <tank x="1.02" y="-3" z="-0.04" capacity="210" />
+  <tank x="0.00" y=" 0" z=" 0.00" capacity="156"/>
+  <tank x="1.02" y=" 3" z="-0.04" capacity="210"/>
+  <tank x="1.02" y="-3" z="-0.04" capacity="210"/>
 
   <weight x=" 0.35" y="0" z="0.2" mass-prop="/sim/weight[0]/weight-lb"/>
   <weight x="-0.20" y="0" z="0.2" mass-prop="/sim/weight[1]/weight-lb"/>

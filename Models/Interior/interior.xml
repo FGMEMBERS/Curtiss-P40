@@ -49,6 +49,36 @@
     </offsets>
   </model>
 
+  <!-- Planches de gauche -->
+  <model>
+    <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Leftside/leftside.xml</path>
+    <offsets>
+      <x-m> -1.04024 </x-m>
+      <y-m> -0.37307 </y-m>
+      <z-m>  0.04840 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Planches de droite -->
+  <model>
+    <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Rightside/rightside.xml</path>
+    <offsets>
+      <x-m> -1.08127 </x-m>
+      <y-m>  0.37418 </y-m>
+      <z-m>  0.04209 </z-m>
+    </offsets>
+  </model>
+
+  <!-- THROTTLE -->
+  <model>
+    <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/throttle/throttle.xml</path>
+    <offsets>
+      <x-m> -0.82422 </x-m>
+      <y-m> -0.33428 </y-m>
+      <z-m>  0.23743 </z-m>
+    </offsets>
+  </model>
+
   <!-- Canopy -->
   <animation>
     <name>AllIntCanopy</name>

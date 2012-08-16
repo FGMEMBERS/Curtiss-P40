@@ -51,9 +51,9 @@
     <property>surface-positions/flap-pos-norm</property>
     <factor> 90 </factor>
     <center>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.023 </z-m>
+      <x-m>  0.005335 </x-m>
+      <y-m> -0.000859 </y-m>
+      <z-m>  0.023020 </z-m>
     </center>
     <axis>
       <x>  1 </x>
@@ -68,9 +68,9 @@
     <property>gear/gear[0]/position-norm</property>
     <factor> 90 </factor>
     <center>
-      <x-m>  0.005</x-m>
-      <y-m> -0.019</y-m>
-      <z-m>  0.000</z-m>
+      <x-m>  0.005360 </x-m>
+      <y-m> -0.023180 </y-m>
+      <z-m>  0.002558 </z-m>
     </center>
     <axis>
       <x> -1 </x>
@@ -85,9 +85,9 @@
     <property>gear/gear[1]/position-norm</property>
     <factor> 90 </factor>
     <center>
-      <x-m> 0.005 </x-m>
-      <y-m> 0.019 </y-m>
-      <z-m> 0.000 </z-m>
+      <x-m> 0.005388 </x-m>
+      <y-m> 0.021840 </y-m>
+      <z-m> 0.001694 </z-m>
     </center>
     <axis>
       <x> 1 </x>
@@ -102,9 +102,9 @@
     <property>gear/gear[2]/position-norm</property>
     <factor> 90 </factor>
     <center>
-      <x-m>  0.005 </x-m>
-      <y-m>  0.001 </y-m>
-      <z-m> -0.019 </z-m>
+      <x-m>  0.005527 </x-m>
+      <y-m>  0.001538 </y-m>
+      <z-m> -0.021870 </z-m>
     </center>
     <axis>
       <x> -1 </x>

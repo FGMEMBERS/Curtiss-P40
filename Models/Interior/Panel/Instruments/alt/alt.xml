@@ -10,6 +10,7 @@
     <object-name>alt-Needle1</object-name>
     <object-name>alt-Needle2</object-name>
     <object-name>alt-Needle3</object-name>
+    <object-name>ingh</object-name>
 
     <object-name>vitre</object-name>
   </animation>
@@ -73,6 +74,17 @@
       <x> -1 </x>
       <y>  0 </y>
       <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>inhg</object-name>
+    <property>instrumentation/altimeter/setting-inhg</property>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
     </axis>
   </animation>
 
