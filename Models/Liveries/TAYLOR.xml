@@ -6,7 +6,7 @@
 
     <model>
       <livery>
-        <name type="string">TAYLOR.png</name>
+        <name type="string">TAYLOR</name>
         <texture>Liveries/TAYLOR.png</texture>
         <specular>
           <red>   0.3 </red>

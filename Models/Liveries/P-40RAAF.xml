@@ -6,8 +6,8 @@
 
     <model>
       <livery>
-        <name type="string">P-40 Operation Torch, North Africa, 1943</name>
-        <texture>Liveries/P-40TORCHb.png</texture>
+        <name type="string">P-40 RAAF 75sq. 1943 Battle of Milne Bay</name>
+        <texture>Liveries/P-40RAAF.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>

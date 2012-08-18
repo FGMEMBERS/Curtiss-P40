@@ -6,8 +6,8 @@
 
     <model>
       <livery>
-        <name type="string">P-40 Operation Torch, North Africa, 1943</name>
-        <texture>Liveries/P-40TORCHb.png</texture>
+        <name type="string">P-40 Early generic</name>
+        <texture>Liveries/P-40Generic.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>
