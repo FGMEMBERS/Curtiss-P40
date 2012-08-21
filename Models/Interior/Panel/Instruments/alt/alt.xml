@@ -79,7 +79,7 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>inhg</object-name>
+    <object-name>ingh</object-name>
     <property>instrumentation/altimeter/setting-inhg</property>
     <axis>
       <x>  0 </x>

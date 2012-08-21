@@ -26,6 +26,8 @@ P-40RAAF     : P-40 RAAF 75sq. 1943 Battle of Milne Bay
 
 P-40TUSKEHEE : P-40 99th FS “A Train II” Italy, 1944 (“Tuskegee Airmen”)
 
+P-40Captured : P-40 Captured 
+
 These liveries were made by : Herve 2012
 
 Thanks to him
