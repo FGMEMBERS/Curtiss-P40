@@ -7,7 +7,7 @@ name "Switch"
 loc 0 0 -0
 data 6
 Switch
-texture "colors.png"
+texture "switch.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 642
@@ -4916,7 +4916,7 @@ name "SwitchNut"
 loc 0 0 -0
 data 9
 SwitchNut
-texture "colors.png"
+texture "switch.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 285
@@ -7004,7 +7004,7 @@ name "fond"
 loc -0.007925 0 -0
 data 4
 fond
-texture "colors.png"
+texture "switch.png"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 8

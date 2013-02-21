@@ -7,7 +7,7 @@ name "detailsgauche"
 loc 0 0 -0
 data 13
 detailsgauche
-texture "colors.png"
+texture "leftside.png"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 306

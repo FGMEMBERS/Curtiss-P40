@@ -29,6 +29,16 @@
     <object-name>intvitrescanopy</object-name>
   </animation>
 
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>intvitres</object-name>
+    <object-name>intvitrescanopy</object-name>
+  </effect>
+
   <!-- Pilote -->
   <model>
     <path>Aircraft/Curtiss-P40/Models/Pilot/pilot.xml</path>

@@ -92,6 +92,7 @@
       <file>Aircraft/Curtiss-P40/Nasal/immat.nas</file>
       <file>Aircraft/Curtiss-P40/Nasal/liveries.nas</file>
       <file>Aircraft/Curtiss-P40/Nasal/light.nas</file>
+      <file>Aircraft/Curtiss-P40/Nasal/rpm.nas</file>
     </p40>
     <guns>
       <file>Aircraft/Curtiss-P40/Nasal/weapons.nas</file>

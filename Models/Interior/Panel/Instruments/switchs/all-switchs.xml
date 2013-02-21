@@ -183,17 +183,5 @@
     </offsets>
   </model>
 
-  <model>
-    <path>Aircraft/Curtiss-P40/Models/Interior/Panel/Instruments/switchs/switch.xml</path>
-    <offsets>
-      <x-m>  0.0220 </x-m>
-      <y-m> -0.2610 </y-m>
-      <z-m> -0.2352 </z-m>
-      <roll-deg>    0.0 </roll-deg>
-      <pitch-deg> -21.5 </pitch-deg>
-      <heading-deg> 0.0 </heading-deg>
-    </offsets>
-  </model>
-
 </PropertyList>
 

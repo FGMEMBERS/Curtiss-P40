@@ -82,9 +82,9 @@
     <object-name>ingh</object-name>
     <property>instrumentation/altimeter/setting-inhg</property>
     <axis>
-      <x>  0 </x>
+      <x> -1 </x>
       <y>  0 </y>
-      <z> -1 </z>
+      <z>  0 </z>
     </axis>
   </animation>
 

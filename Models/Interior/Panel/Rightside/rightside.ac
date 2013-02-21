@@ -7,7 +7,7 @@ name "detailsdroit"
 loc 0 0 -0
 data 12
 detailsdroit
-texture "colors.png"
+texture "rightside.png"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 286

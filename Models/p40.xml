@@ -68,11 +68,11 @@
     <object-name>roueD</object-name> 
     <object-name>axeA</object-name> 
     <object-name>roueA</object-name> 
-
+    <object-name>cables</object-name>
+    
     <!-- Objets transparents -->
     <object-name>vitres</object-name>
     <object-name>vitrescanopy</object-name>
-    <object-name>cables</object-name>
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
   </animation>
@@ -118,7 +118,8 @@
     <object-name>roueD</object-name> 
     <object-name>axeA</object-name> 
     <object-name>roueA</object-name> 
-
+    <object-name>cables</object-name>
+    
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
@@ -162,6 +163,41 @@
     <object-name>dessous</object-name>
     <object-name>porteAG</object-name>
     <object-name>porteAD</object-name>
+    <condition>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
+    </condition>
+  </effect>
+
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>bol</object-name>
+    <object-name>ailes</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>voletG</object-name>
+    <object-name>voletD</object-name>
+    <object-name>ailes2</object-name>
+    <object-name>direction</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>canopy</object-name>
+    <object-name>caches</object-name>
+    <object-name>rear</object-name>
+    <object-name>ailetteG1</object-name>
+    <object-name>ailetteG2</object-name>
+    <object-name>ailetteD2</object-name>
+    <object-name>ailetteD1</object-name>
+    <object-name>pito</object-name>
+    <object-name>porteG1</object-name>
+    <object-name>porteG2</object-name>
+    <object-name>porteD2</object-name>
+    <object-name>porteD1</object-name>
+    <object-name>dessous</object-name>
+    <object-name>porteAG</object-name>
+    <object-name>porteAD</object-name>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
   </effect>
 
   <animation>
@@ -170,17 +206,28 @@
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>vitres</object-name>
     <object-name>vitrescanopy</object-name>
-    <object-name>cables</object-name>
   </animation>
 
   <animation>
     <type>noshadow</type>
     <object-name>vitres</object-name>
     <object-name>vitrescanopy</object-name>
-    <object-name>cables</object-name>
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
   </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>vitres</object-name>
+    <object-name>vitrescanopy</object-name>
+    <object-name>cables</object-name>
+    <object-name>propdisc</object-name>
+    <object-name>propblur</object-name>
+  </effect>
 
   <animation>
     <type>select</type>
@@ -207,8 +254,15 @@
 
   <!-- Interieur -->
   <model>
+    <name>Interieur</name>
     <path>Aircraft/Curtiss-P40/Models/Interior/interior.xml</path>
   </model>
+
+  <!-- For Rembrandt -->
+  <animation>
+    <type>noshadow</type>
+    <object-name>Interieur</object-name>
+  </animation>
 
   <!-- Cranking effects -->
   <!-- Left -->

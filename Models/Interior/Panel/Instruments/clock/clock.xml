@@ -70,11 +70,6 @@
     <object-name>secondes</object-name>
     <property>/instrumentation/clock/indicated-sec</property>
     <factor>6</factor>
-    <center>
-      <x-m>  0.000 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -0.010 </z-m>
-    </center>
     <axis>
       <x> -1 </x>
       <y>  0 </y>
