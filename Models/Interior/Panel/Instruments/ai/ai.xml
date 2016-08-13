@@ -15,13 +15,17 @@
     <object-name>vitre</object-name>
   </animation>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <name>vitre</name>
-  </animation>
-
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Curtiss-P40/Models/Effects/glass/glass</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+  
   <animation> 
     <type>material</type>
     <object-name>fond2</object-name>
@@ -47,4 +51,3 @@
   </animation>
 
 </PropertyList>
-

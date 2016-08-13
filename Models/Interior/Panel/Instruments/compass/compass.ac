@@ -1,6 +1,6 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "transparent" rgb 0.9 0.9 0.9 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 50 trans 0.85
+MATERIAL "transparent" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 64 trans 0.85
 OBJECT world
 kids 5
 OBJECT poly
@@ -10,7 +10,7 @@ data 7
 Compass
 texture "compass.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 32
 0.035119 0.013736 0.014433
 0.038014 0.013736 -0
@@ -165,7 +165,7 @@ data 3
 box
 texture "compass.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 8
 -0.003013 -0.009113 0.037891
 -0.003013 0.031257 0.037891
@@ -219,7 +219,7 @@ data 4
 face
 texture "compass.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 31
 0.0006 -0.012051 -0.042231
 0.0006 -0.032533 -0.029068
@@ -460,7 +460,7 @@ data 4
 fond
 texture "compass.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 97
 0.002153 -0.007885 -0.038893
 0.002153 -0.015441 -0.036663
@@ -1014,7 +1014,7 @@ name "vitre"
 loc 0 0 -0
 data 5
 vitre
-crease 30.000001
+crease 180.000005
 numvert 34
 0.001877 -0.000226 0.000054
 0.003139 0.036951 -0.023546

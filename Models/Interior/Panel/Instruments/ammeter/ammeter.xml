@@ -10,22 +10,21 @@
     <object-name>face</object-name>
     <object-name>visses</object-name>
     <object-name>needle</object-name>
-	
+
     <object-name>vitre</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Curtiss-P40/Models/Effects/glass/glass</inherits-from>
     <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>vitre</object-name>
-  </animation>
-
+  </effect>
+  
   <animation>
     <type>material</type>
     <object-name>face</object-name>
@@ -47,9 +46,9 @@
       <entry><ind> 60 </ind><dep> 90 </dep></entry>
     </interpolation>
     <center>
-      <x-m>  0.007298 </x-m>
-      <y-m>  0.000000 </y-m>
-      <z-m> -0.024310 </z-m>
+      <x-m>  0.00000 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.01702 </z-m>
     </center>
     <axis>
       <x> -1 </x>
@@ -59,4 +58,3 @@
   </animation>
 
 </PropertyList>
-

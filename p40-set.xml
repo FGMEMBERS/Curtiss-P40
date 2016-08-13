@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="ISO-8859-1"?> 
 
-<!-- <PropertyList include="p40-jsbsim-cnf.xml"> -->
-<PropertyList include="p40-yasim-cnf.xml">
+<PropertyList include="Systems/p40-base.xml">
 
   <sim>
 
     <description>Curtiss P 40 (YASim)</description>
     <author>Emmanuel BARANGER (3D/FDM), Tomcatter (Instruments)</author>
 
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+
+    <flight-model>yasim</flight-model>
+    <aero>Systems/p40-yasim</aero>
+
     <rating>
-      <FDM type="int">     1 </FDM>
-      <systems type="int"> 0 </systems>
-      <cockpit type="int"> 1 </cockpit>
+      <FDM type="int">     3 </FDM>
+      <systems type="int"> 1 </systems>
+      <cockpit type="int"> 2 </cockpit>
       <model type="int">   4 </model>
     </rating>
 
   </sim>
 
 </PropertyList>
-
