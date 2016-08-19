@@ -22,9 +22,9 @@
       <magnetos>0</magnetos>
     </engine>
   </engines> 
-  <!--  
+  
   <flight>
-    <elevator-trim>-0.02</elevator-trim>
+    <elevator-trim>0</elevator-trim>
   </flight>
-  -->
+  
 </PropertyList>
