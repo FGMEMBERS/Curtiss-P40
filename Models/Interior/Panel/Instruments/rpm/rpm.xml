@@ -8,27 +8,26 @@
     <object-name>fond</object-name>
     <object-name>visses</object-name>
     <object-name>face</object-name>
-    <object-name>needle1</object-name>
+    <object-name>needle</object-name>
 
     <object-name>vitre</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Curtiss-P40/Models/Effects/glass/glass</inherits-from>
     <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>vitre</object-name>
-  </animation>
-
+  </effect>
+  
   <animation>
     <type>material</type>
     <object-name>face</object-name>
-    <object-name>needle1</object-name>
+    <object-name>needle</object-name>
     <emission>
       <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
@@ -39,7 +38,7 @@
 
   <animation> 
     <type>rotate</type>
-    <object-name>needle1</object-name>
+    <object-name>needle</object-name>
     <property>engines/engine/rpm</property>
     <interpolation>
       <entry><ind>    0 </ind><dep>   0 </dep></entry>
@@ -59,4 +58,3 @@
   </animation>
    
 </PropertyList>
-

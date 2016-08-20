@@ -31,4 +31,3 @@ P-40Captured : P-40 Captured
 These liveries were made by : Herve 2012
 
 Thanks to him
-

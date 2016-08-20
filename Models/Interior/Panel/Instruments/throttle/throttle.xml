@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
-
+  
   <path>throttle.ac</path>
-
+  
   <animation>
     <object-name>throttle</object-name>
     <object-name>cache</object-name>
     <object-name>throttlemanette</object-name>
     <object-name>mixturemanette</object-name>
     <object-name>propellermanette</object-name>
-	
+    
   </animation>
-
+  
   <!-- Manette des gazs -->
   <animation>
     <type>rotate</type>
@@ -25,7 +25,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <!-- Manette de mixture -->
   <animation>
     <type>rotate</type>
@@ -38,7 +38,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <!-- Manette de pas d'hélice -->
   <animation>
     <type>rotate</type>
@@ -51,7 +51,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <!-- Ajustage par molette -->
   <animation>
     <type>pick</type>
@@ -66,7 +66,7 @@
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <visible>true</visible>
@@ -80,7 +80,7 @@
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <visible>true</visible>
@@ -94,7 +94,7 @@
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <visible>true</visible>
@@ -108,7 +108,7 @@
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <visible>true</visible>
@@ -122,7 +122,7 @@
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <visible>true</visible>
@@ -136,6 +136,5 @@
       </binding>
     </action>
   </animation>
-
+  
 </PropertyList>
-

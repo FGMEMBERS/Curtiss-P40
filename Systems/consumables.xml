@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <fuel>
+    <tank n="0">
+      <tank-num type="int">0</tank-num>
+      <level-gal_us archive="y">35</level-gal_us>
+    </tank>
+    <tank n="1">
+      <tank-num type="int">1</tank-num>
+      <level-gal_us archive="y">60</level-gal_us>
+    </tank>
+    <tank n="2">
+      <tank-num type="int">2</tank-num>
+      <level-gal_us archive="y">62.5</level-gal_us>
+    </tank>
+  </fuel>
+  
+</PropertyList>
